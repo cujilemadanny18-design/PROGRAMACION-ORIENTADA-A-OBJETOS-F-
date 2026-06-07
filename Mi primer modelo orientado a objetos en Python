@@ -1,0 +1,29 @@
+class Estudiante:
+    def __init__(self, nombre, edad, carrera):
+        self.nombre = nombre
+        self.edad = edad
+        self.carrera = carrera
+
+    # Método 1
+    def estudiar(self):
+        print(f"{self.nombre} está estudiando {self.carrera}.")
+
+    # Método 2
+    def mostrar_datos(self):
+        print("Datos del estudiante:")
+        print(f"Nombre: {self.nombre}")
+        print(f"Edad: {self.edad}")
+        print(f"Carrera: {self.carrera}")
+        print()
+
+
+# Creación de objetos
+estudiante1 = Estudiante("Danny Cajo", 18, "Tecnología de la Información")
+estudiante2 = Estudiante("María López", 20, "Contabilidad")
+
+# Uso de los métodos
+estudiante1.mostrar_datos()
+estudiante1.estudiar()
+
+estudiante2.mostrar_datos()
+estudiante2.estudiar()
